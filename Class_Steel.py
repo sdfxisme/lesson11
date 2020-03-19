@@ -9,6 +9,12 @@ class Steel():
     def __gt__(self, other):
         return self.weight()>other.weight()
 
+    def __ge__(self, other):
+        return self.weight() >= other.weight()
+
+    def __le__(self, other):
+        return self.weight() <= other.weight()
+
     def __lt__(self, other):
         return self.weight()<other.weight()
 
